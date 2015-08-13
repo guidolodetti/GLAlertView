@@ -5,8 +5,9 @@ Currently, the alert works only with a maximum of two buttons: a cancel button a
 ### Usage
 Add the file to your project and you are ready!
 
-###### Examples
+#### Examples
 
+###### Example 1
 ```
 // EXAMPLE 1 WITH COMPLETION BLOCK AND TWO BUTTONS
 GLAlertView(title: "This is the title", message: "This is an example message. Each label can be long more than one line.", cancelButtonTitle: "CANCEL", otherButtonTitles: ["OK"]).show({ (alertView, buttonIndex) -> Void in
@@ -16,11 +17,14 @@ GLAlertView(title: "This is the title", message: "This is an example message. Ea
         // OTHER BUTTON WAS PRESSED
     }
 })
+```
 
-// EXAMPLE 2 WITH NO COMPLETITION BLOCK AND ONLY ONE BUTTON
+###### Example 2
+```
+// EXAMPLE 2 WITH NO COMPLETION BLOCK AND ONLY ONE BUTTON
 GLAlertView(title: "This is the title", message: "This is an example message. Each label can be long more than one line.", cancelButtonTitle: nil, otherButtonTitles: ["OK"]).show(nil)
 ```
 
-###### Notes
+#### Notes
 This class was made for a personal project and it can be improved a lot (more than two buttons, landscape mode...).
 You are free to edit the code as you want. The current code is commented as much as possible and should be very easy to customize. You can change the animations and the layout with just a few lines of code.
